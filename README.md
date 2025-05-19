@@ -8,12 +8,22 @@ My role in the project consisted mostly in the design and software implementatio
 
 1. Contruct a racing track with two different colored cones for inner and outer track boundaries.
 2. Manually drive robot through track (human RC driver) to scan the map and log each detection of a cone.
-![Image of a track with cones](Figures/top_view_hard_map.png)
+<p align="center">
+  <img src="Figures/top_view_hard_map.png" alt="Image of a track with cones" width="40%">
+</p>
 4. Use cone detection algorithm (YOLOv3 finetuned for cones, able to detect cone color).
-![Image of unfiltered cone detections](Figures/track_hard_step1_raw.png)
+<p align="center">
+  <img src="Figures/track_hard_step1_raw.png" alt="Image of unfiltered cone detections" width="40%">
+</p>
 5. Cluster cone detections using Gaussian Mixture Models.
-![Image of cone detection clusters](Figures/track_hard_step2_gmm.png)
+<p align="center">
+  <img src="Figures/track_hard_step2_gmm.png" alt="Image of cone detection clusters" width="40%">
+</p>
 6. Implement filtering techniques to reliably filter out false detections and outliers.
-![Image of filtered map](Figures/track_hard_step3_outliers.png)
+<p align="center">
+  <img src="Figures/track_hard_step3_outliers.png" alt="Image of filtered map" width="40%">
+</p>
 7. Extract "waypoints" (green) from detected race track boundaries for autonomous agent to use as control reference.
-![Image of map with waypoints](Figures/track_hard_step4_midpoints.png)
+<p align="center">
+  <img src="Figures/track_hard_step4_midpoints.png" alt="Image of map with waypoints" width="40%">
+</p>
